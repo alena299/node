@@ -142,7 +142,7 @@ console.log(number1 / number2)
     addNumber(90,1)
     addNumber(2,2)*/
 
-    function someThing(a, b) {
+    /*function someThing(a, b) {
         if (a === b) {
             return a**b;
         } else {
@@ -150,5 +150,227 @@ console.log(number1 / number2)
         }
     }
     const result = someThing(2, 4);
-    console.log(result)
+    console.log(result)*/
+  
+  /*  let str = "Привет";
+
+console.log( str.toUpperCase() ); 
+let num = 2.76543;
+
+console.log( num.toFixed(2) );*/
+/*console.log(8 % 6);
+console.log(16 ** (1/2))
+let apples = 3;
+let carots = 5;
+console.log(+apples + +carots);
+let x = 3;
+x++;
+console.log(x)
+let y = 3;
+++y;
+console.log(y)*/
+/*for (a = 1, b = 3, c = a * b; a < 10; a++) {
+    console.log(c)
+   }
+   let x = 5;
+   while(x < 10) {
+    console.log(x);
+    x++;
+   }*/
+  /*let num = 0;
+   for(; num < 5; num++) {
+    console.log(num);
+    if(num == 2) break;
+   }
+   console.log(`The end, num = ${num}`);*/
+
+   /*let num = 0;
+   for (; num < 5; num++) {
+    if (num == 2) continue;
+    console.log(num);
+   }*/
+
+// firstFor: for (let num = 0; num < 2; num++) {
+
+//     for (let size = 0; size < 3; size++) {
+ 
+//         if (size == 1) {
+//         break firstFor;
+//     }
+//     console.log(size);
+// }
+   
+// }
+
+// let color = 'yellow';
+
+// // switch (color) {
+// //     case 'yellow':
+// //         console.log( 'color is yellow' );
+// //         break;
+// //     case 'red':
+// //         console.log( 'color is red' );
+// //         break;
+// //     default :
+// //     console.log( 'o' );
+// }
+
+// let a = 2 + 2;
+
+// switch (a) {
+//   case 3:
+//     alert( 'Маловато' );
+//   case 4:
+//     alert( 'В точку!' );
+//   case 5:
+//     alert( 'Перебор' );
+//   default:
+//     alert( "Нет таких значений" );
+// }
+
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
+//     let result = sum(85, 55);
     
+//     console.log(result)
+
+// showMessage();
+// showMessage();
+// function showMessage() {
+//     console.log('hello');
+// }
+// showMessage();
+
+// function calcSum(num1, num2) {
+//     let calcSum = num1 + num2;
+//     console.log(`num1:${num1}`);
+//     console.log(`num2:${num2}`);
+//     let numSumm = num1 + num2;
+//     console.log(`sum:${numSumm}`);
+// }
+// calcSum(7, 9);
+
+// function calcSumm(n1, n2, more, less) {
+//     let numSumm = n1 + n2;
+//     if (numSumm > 3) {
+//         more();        
+//     } else {
+//         less();
+//     }
+// }
+
+// function showMoreMessage() {
+//     console.log('more than 3');    
+// }
+// function showLessMessage() {
+// console.log('less than 3');
+// }
+
+// calcSumm(1, 1, showMoreMessage, showLessMessage);
+
+// function calcSumm(n1, n2) {
+//     let numSumm = n1 + n2;
+//     return numSumm;
+// }
+// let funcResult = calcSumm(4, 8);
+// console.log(`summ:${funcResult}`)
+
+// function getSumm(n1, n2) {
+//     let numSumm = calcSumm(n1, n2);
+//     console.log(numSumm);
+// }
+// function calcSumm(n1, n2) {
+//     return n1 + n2;
+// }
+// getSumm(4, 7);
+
+// function calcSumm(n1, n2) {
+//     if (n2 === 1) {
+//         return n1;
+//     } else {
+//         return n1 * calcSumm(n1, n2 -1);
+//     }
+// }
+// console.log(calcSumm(3, 4));
+
+// let showMessage = function () {
+//     console.log('hi');
+// };
+// showMessage();
+
+// let getName = (text, name) => text + ', ' + name + '!';
+// console.log(getName('hi', 'John'));
+
+// let getMessage = (text, name) => {
+// let message = text + ', ' + name + '!';
+// return message;
+// };
+// console.log(getMessage('hi', 'John'));
+
+// function showMessage(text, name) {
+//     console.log(`${text}, ${name}!`);   
+// }
+    
+// setTimeout(showMessage, 3000, 'Hi', 'John');
+
+// function showMessage(text, name) {
+//         console.log(`${text}, ${name}!`);   
+//     }
+        
+//     setInterval(showMessage, 500, 'Hi', 'John');
+
+// function showNumber(num) {
+//         console.log(num);  
+//         if(num < 5) {
+//             setTimeout(showNumber, 1000, ++num);  
+//         }
+          
+//     }
+        
+//     setTimeout(showNumber, 1000, 1);
+
+// function showNumber(num) {
+//     console.log(num);  
+//     let timeId = setTimeout(showNumber, 1000, ++num);
+//     if(num === 7) {
+//         clearTimeout(timeId);
+          
+//     }
+//  }
+   
+// setTimeout(showNumber, 1000, 1);
+
+// let result = 0;
+// function showNumber(num) {
+//     result += num;
+//     console.log(result);  
+//     if(result === 7) {
+//         clearInterval(timeId);          
+//     }
+//  }
+//  let timeId = setInterval(showNumber, 1000, 1);  
+
+
+// function showName() {
+//     console.log('V');
+// }
+// setTimeout(showName, 0);
+// console.log('K');
+
+
+function checkAge(age) {
+    if (age >= 18) {
+      return true;
+    } else {
+      return confirm('А родители разрешили?');
+    }
+  }
+  
+  let age = prompt('Сколько вам лет?', 18);
+  
+  if ( checkAge(age) ) {
+    alert( 'Доступ получен' );
+  } else {
+    alert( 'Доступ закрыт' );
+  }
