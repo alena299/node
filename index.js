@@ -359,18 +359,101 @@ console.log(y)*/
 // console.log('K');
 
 
-function checkAge(age) {
-    if (age >= 18) {
-      return true;
-    } else {
-      return confirm('А родители разрешили?');
-    }
-  }
+// function checkAge(age) {
+//     if (age >= 18) {
+//       return true;
+//     } else {
+//       return confirm('А родители разрешили?');
+//     }
+//   }
   
-  let age = prompt('Сколько вам лет?', 18);
+//   let age = prompt('Сколько вам лет?', 18);
   
-  if ( checkAge(age) ) {
-    alert( 'Доступ получен' );
-  } else {
-    alert( 'Доступ закрыт' );
-  }
+//   if ( checkAge(age) ) {
+//     alert( 'Доступ получен' );
+//   } else {
+//     alert( 'Доступ закрыт' );
+//   }
+
+
+// 3 варианта создания функций:
+// function declaration:
+// const numbers = sum(1, 2);
+// console.log(numbers)
+// function sum(a, b) {
+//     return a +b
+// };
+
+
+// // function expression:
+// const sum2 = function(a, b) {
+//     return a + b;
+// }
+// console.log(sum2(3, 5))
+
+// // стрелочная ф-я
+// const sum3 = (a, b) => a + b;
+// console.log(sum3(3, 5))
+// console.log(sum3(8, 8))
+// console.log(sum3(3, 12))
+// console.log(sum3(13, 5))
+
+// // constructor
+// const Student = function(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     console.log(this)
+// }
+// const studentJonh = new Student('john', 16);
+// console.log(studentJonh)
+
+// several students
+// 
+
+// область видимости
+// const name = 'Ed';
+// const func = (a, b) => {
+//     console.log(name);
+// }
+//     func()
+// function sum(a, b) {
+//     const result = a + b;
+//     return result
+// }
+// const sum1 = sum(2, 3);
+// console.log(sum1)
+
+// example циклы в js/buttons
+
+// const buttons = document.querySelectorAll('.myButton');
+// const spans = document.querySelectorAll('.mySpan');
+// const Counter = function(){
+//     this.count = 0;
+//     this.increase = function() {
+//         this.count = this.count + 1
+//     }
+// }
+
+// for(let i = 0; i < buttons.length; i++) {
+//     const counter = new Counter()
+//     const currentButton = buttons[i];
+//     const currentSpan = spans[i];
+//     currentSpan.innerHTML = counter.count;
+//     currentButton.addEventListener('click', (event) => {
+   
+//         counter.increase()
+//         currentSpan.innerHTML = counter.count
+// })
+    
+// }
+
+// ФУНКЦИЯ
+// function func(a, b) {
+//     const  multy = (a % b)
+//     console.log(multy)
+//     return multy;
+// }
+// func(5, 8)
+// func(8, 4)
+// func(10, 3)
+
