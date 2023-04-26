@@ -447,7 +447,7 @@ console.log(y)*/
     
 // }
 
-// ФУНКЦИЯ
+// ФУНКЦИЯ 1
 // function func(a, b) {
 //     const  multy = (a % b)
 //     console.log(multy)
@@ -456,4 +456,69 @@ console.log(y)*/
 // func(5, 8)
 // func(8, 4)
 // func(10, 3)
+
+// ФУНКЦИЯ 2
+// const multy = function(a, b) {
+//     return a * b;
+// }
+// console.log(multy(6, 7));
+
+// ФУНКЦИЯ 3
+// // const multy = (a, b) => a * b;
+
+// // /* Эта стрелочная функция представляет собой более короткую форму:
+
+// // let multy = function(a, b) {
+// //   return a * b;
+// // };
+// // */
+
+// // console.log(multy(6, 7) ); 
+
+// FUNC CALLBACK
+// const callPolice = () => {
+//     console.log('call 02');
+// }
+
+// const alarm = (thiefs, callback) => {
+//     console.log(thiefs)
+//     if (thiefs < 10) {
+//         return;
+//     }
+
+//     callback(thiefs)
+// }
+
+// for(let i = 1; i < 20; i++) {
+//     alarm(i, callPolice)
+// }
+
+// РЕКУРСИЯ - Ф-Я ВОЗВРАЩАЕТ СЕБЯ not work
+// const array = [1, 2, 3, 4, [5, 6 [7, 8]]]
+// const result = [];
+
+// const flattenArray = function(arr) {
+//     console.log(arguments)
+//     for(let i = 0; i < arr.length; i++) {
+//         const currentValue = arr[i]
+//         if(typeof currentValue !== 'number') {
+//             flattenArray(currentValue)
+//         } else {
+//             result.push(currentValue)
+//         }
+//     }
+// }
+// flattenArray(array)
+// console.log(result)
+
+// CALLBACK ВЫВОД ДАТЫ И РЕЗУЛЬТАТ
+const myCallBack = (time, result) => {
+    console.log(time, result)
+}
+const sum = (a, b, callback) => {
+    callback(new Date(), a + b)
+    return a + b;
+}
+sum(1, 2, myCallBack)
+
 
