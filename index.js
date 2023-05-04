@@ -520,5 +520,6 @@ const sum = (a, b, callback) => {
     return a + b;
 }
 sum(1, 2, myCallBack)
+// console.log(sum(1, 2, myCallBack))
 
 
