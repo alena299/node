@@ -522,4 +522,28 @@ const sum = (a, b, callback) => {
 sum(1, 2, myCallBack)
 console.log(sum(1, 2, myCallBack))
 
+// const { stdout } = process;
+// stdout.write('Node.js');
+// const { stdin, stdout } = process;
+// stdin.on('data', data => stdout.write(data));
+
+// const { stdout, stderr } = process;
+
+// process.on('exit', code => {
+//     if (code === 0) {
+//         stdout.write('Всё в порядке');
+//     } else {
+//         stderr.write(`Что-то пошло не так. Программа завершилась с кодом ${code}`);
+//     }
+// });
+
+const { stdout, stdin } = process;
+stdout.write('Как тебя зовут?\n');
+stdin.on('data', data => {
+  stdout.write('Привет, ');
+  stdout.write(data);
+  process.exit();
+});
+process.on('exit', () => stdout.write('Удачи!'));
+
 
